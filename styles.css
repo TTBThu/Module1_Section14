@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #202142;
+}
+ul {
+    list-style: none;
+}
+.container{
+    margin: auto;
+    padding: 0 20px;
+}
+header{
+    color: rgb(255,106,149);
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.card{
+    background-color: white;
+    padding: 40px 50px;
+    position: relative;
+}
+.card h2{
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+}
+.rating{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.rating li, .num-display {
+    position: relative;
+    background: #f4f4f4;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 19px;
+    border: 1px solid #eee;
+    margin: 0 2px;
+}
+.rating li label {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.rating li:hover, .num-display  {
+    background: #ff6a95;
+    color: #fff;
+}
+[type='radio'] {
+    opacity: 0;
+}
+[type='radio']:checked ~ label {
+    background: #ff6a95;
+    color: #fff;
+}
+.input-group{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    padding: 8px 10px;
+    margin: 50px 0;
+}
+input{
+    flex-grow: 2;
+    border: none;
+    
+    font-size: 16px;
+}
+.num-display {
+    position: absolute;
+    top: -10px;
+    left: -30px;
+}
+.close, .edit{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color:red;
+}
+.edit{
+    right: 50px;
+    top: 12px;
+}
+.btn{
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    height: 40px;
+    width: 100px;
+}
+.btn:disabled{
+    background-color: #ccc;
+    color: #333;
+    cursor: auto;
+}
+.review {
+    margin-top: 20px;
+    padding: 20px 0;
+    position: relative;
+}
+
+.review .num-display {
+    background: #ff6a95;
+    color: #fff;
+    border: 1px solid #ff6a95;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -20px;
+}
+
+.review .text-display {
+    margin-top: 20px;
+}
+.card.false .text-display {
+    display: block; /* Hiển thị nội dung chỉnh sửa khi ở chế độ chỉnh sửa */
+}
+
+.card .text-display {
+    display: none; /* Ẩn nội dung không chỉnh sửa khi không ở chế độ chỉnh sửa */
+}
+
+.review .close, .review .edit {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: red;
+}
+
+.review .edit {
+    right: 50px;
+    color: #ff6a95;
+    top: 22px;
+}

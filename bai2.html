@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section14</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2>Feedback Coach</h2>
+        </div>
+    </header>
+    <div class="container">
+        <div class="card false">
+            <form action="#">
+                <h2>Thầy dạy anh em có hay không</h2>
+            </form>
+            <ul class="rating">
+                <li>
+                    <input type="radio" id="num1" name="rating" value="1">
+                    <label for="num1">1</label>
+                </li>
+                <li>
+                    <input type="radio" id="num2" name="rating" value="2">
+                    <label for="num2">2</label>
+                </li>
+                <li>
+                    <input type="radio" id="num3" name="rating" value="3">
+                    <label for="num3">3</label>
+                </li>
+                <li>
+                    <input type="radio" id="num4" name="rating" value="4">
+                    <label for="num4">4</label>
+                </li>
+                <li>
+                    <input type="radio" id="num5" name="rating" value="5">
+                    <label for="num5">5</label>
+                </li>
+                <li>
+                    <input type="radio" id="num6" name="rating" value="6">
+                    <label for="num6">6</label>
+                </li>
+                <li>
+                    <input type="radio" id="num7" name="rating" value="7">
+                    <label for="num7">7</label>
+                </li>
+                <li>
+                    <input type="radio" id="num8" name="rating" value="8">
+                    <label for="num8">8</label>
+                </li>
+                <li><input type="radio" id="num9" name="rating" value="9">
+                    <label for="num9">9</label></li>
+                <li>
+                    <input type="radio" id="num10" name="rating" value="10">
+                    <label for="num10">10</label>
+                </li>
+            </ul>
+            <div class="input-group">
+                <input type="text" placeholder="Write a review" value>
+                <button type="submit" disabled class="btn btn-primary">send</button>
+            </div>
+            <div style="margin-top: 130px;">
+                <div class="card" style="padding-top: 55px; padding-left: 0px;">
+                    <div class="num-display">10</div>
+                    <button class="close">&#x2716;</button>
+                    <button class="edit">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" color="#ff6a95" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: #ff6a95;">
+                            <path d="M402.6 83.2l90.2 90.2c3.8 3.8 3.8 10 0 13.8L274.4 405.6l-92.8 10.3c-12.4 1.4-22.9-9.1-21.5-21.5l10.3-92.8L388.8 83.2c3.8-3.8 10-3.8 13.8 0zm162-22.9l-48.8-48.8c-15.2-15.2-39.9-15.2-55.2 0l-35.4 35.4c-3.8 3.8-3.8 10 0 13.8l90.2 90.2c3.8 3.8 10 3.8 13.8 0l35.4-35.4c15.2-15.3 15.2-40 0-55.2zM384 346.2V448H64V128h229.8c3.2 0 6.2-1.3 8.5-3.5l40-40c7.6-7.6 2.2-20.5-8.5-20.5H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V306.2c0-10.7-12.9-16-20.5-8.5l-40 40c-2.2 2.3-3.5 5.3-3.5 8.5z"></path>
+                        </svg>
+                    </button>
+                    <div class="text-display">11 điểm</div>
+                </div>
+                <div class="reviews"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

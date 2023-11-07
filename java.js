@@ -22,6 +22,7 @@ list.addEventListener('click', function(ev) {
 
 function newElement() {
     var li = document.createElement("li");
+    //gán giá trị của thuộc tính value của phần tử input vào biến inputValue
     var inputValue = document.getElementById("nhapVao").value;
 
     var text = document.createTextNode(inputValue);
